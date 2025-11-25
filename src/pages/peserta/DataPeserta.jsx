@@ -79,9 +79,9 @@ function DataPeserta() {
   ];
 
   return (
-    <div className="px-4">
-      <h2 className="text-2xl font-semibold mb-4 text-lime-700">
-        Data Peserta
+    <div className="px-4 mt-10">
+      <h2 className="text-4xl font-semibold mb-4 text-lime-700 text-center">
+        Data Siswa
       </h2>
       <div className="mb-4">
         <Button onClick={() => navigate("/peserta/tambah")}>
