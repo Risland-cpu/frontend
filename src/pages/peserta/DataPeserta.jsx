@@ -80,7 +80,7 @@ function DataPeserta() {
 
   return (
     <div className="px-4">
-      <h2 className="text-2xl font-semibold mb-4 text-blue-700">
+      <h2 className="text-2xl font-semibold mb-4 text-lime-700">
         Data Peserta
       </h2>
       <div className="mb-4">

@@ -14,9 +14,9 @@ function Navbar() {
   };
 
   return (
-    <nav className="sticky top-0 bg-blue-600 text-white shadow-md w-full">
+    <nav className="sticky top-0 bg-lime-600 text-white shadow-md w-full">
       <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-        <h1 className="font-bold text-lg">Job Sheet</h1>
+        <h1 className="font-bold text-lg">UJK</h1>
 
         <button
           className="lg:hidden hover:cursor-pointer"

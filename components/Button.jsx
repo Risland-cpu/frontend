@@ -11,10 +11,10 @@ function Button({
   }`;
 
   const variants = {
-    primary: "bg-blue-600 hover:bg-blue-700",
+    primary: "bg-cyan-600 hover:bg-cyan-700",
     secondary: "bg-gray-600",
-    danger: "bg-red-600 hover:bg-red-700",
-    success: "bg-green-600 hover:bg-green-700",
+    danger: "bg-red-700 hover:bg-red-950",
+    success: "bg-emerald-600 hover:bg-emerald-700",
   };
 
   return (

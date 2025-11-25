@@ -2,7 +2,7 @@ function Table({ columns, data }) {
   return (
     <div className="overflow-x-auto rounded-lg shadow border border-gray-200">
       <table className="w-full text-sm text-left">
-        <thead className="bg-blue-600 text-white">
+        <thead className="bg-lime-600 text-white">
           <tr>
             {columns.map((col, idx) => (
               <th key={idx} className="px-4 py-2 font-semibold">
