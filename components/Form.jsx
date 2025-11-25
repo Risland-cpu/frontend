@@ -8,7 +8,7 @@ import { baseUrl } from "../src/config/Constant";
 import { AuthContext } from "../src/context/AuthContext";
 
 function Form({ mode = "create" }) {
-  const [form, setForm] = useState({ name: "", status: "aktif" });
+  const [form, setForm] = useState({ jurusan: "Informatika" });
   const { id } = useParams();
   const navigate = useNavigate();
   const { user } = useContext(AuthContext);
@@ -45,13 +45,9 @@ function Form({ mode = "create" }) {
     e.preventDefault();
     try {
       if (mode === "create") {
-        await axios.post(`${baseUrl}/api`, form, {
-          headers: { Authorization: `Bearer ${user.accessToken}` },
-        });
+        await axios.post(`${baseUrl}/api`, form);
       } else if (mode === "edit" && id) {
-        await axios.put(`${baseUrl}/api/${id}`, form, {
-          headers: { Authorization: `Bearer ${user.accessToken}` },
-        });
+        await axios.put(`${baseUrl}/api/${id}`, form);
       }
       Swal.fire("Berhasil", "Data peserta disimpan", "success");
       navigate("/peserta");
@@ -109,7 +105,9 @@ function Form({ mode = "create" }) {
             disabled={isReadOnly}
             className="p-2 border rounded"
           >
-            <option value="Informatika">Informatika</option>
+            <option value="Informatika" selected>
+              Informatika
+            </option>
             <option value="Ekonomi">Ekonomi</option>
             <option value="Teknik Sipil">Teknik Sipil</option>
             <option value="Hukum">Hukum</option>
